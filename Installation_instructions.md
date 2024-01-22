@@ -1,6 +1,6 @@
 ## Инструкция по установке Cramming Poems
 
-[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg)
+[<img src="photo/latest.jpg" width="300"/>](photo/latest.jpg)
 
 ### Нажимайте на то что обведено красным.
 
