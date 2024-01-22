@@ -12,25 +12,29 @@
 
 1. Начните скачку установочного файла
 
-	[<img src="photo/latest.jpg" width="250"/>](photo/latest_start_load.jpg)
+	[<img src="photo/latest_start_load.jpg" width="250"/>](photo/latest_start_load.jpg)
 
 1. Дождаться скачивания
 
 	[<img src="photo/latest_loading.jpg" width="250"/>](photo/latest_loading.jpg)
 
+1. Открыть Установочный файл
+
+	[<img src="photo/run_the_installer.jpg" width="250"/>](photo/run_the_installer.jpg)
+
 1. Нажимаем *“Установить”*
 
 	[<img src="photo/click_install.jpg" width="250"/>](photo/click_install.jpg)
 
-	Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
+	1.1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
 
 		https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/
 
-		В конце должно выглядеть так
+	1.1. В конце должно выглядеть так
 			
 		[<img src="photo/permission_to_install_from_unknown_sources.jpg" width="250"/>](photo/permission_to_install_from_unknown_sources.jpg)
 		
-		После изменения настроек - снова открываем установочный файл
+	1.1. После изменения настроек - снова открываем установочный файл
 
 
 1. Начинается установка - *ничего* не нажимаем
