@@ -18,7 +18,7 @@
 
 	[<img src="photo/latest_loading.jpg" width="250"/>](photo/latest_loading.jpg)
 
-1. Открыть <u>***установочный файл***
+1. Открыть ***<u>установочный файл</u>***
 
 	[<img src="photo/run_the_installer.jpg" width="250"/>](photo/run_the_installer.jpg)
 
