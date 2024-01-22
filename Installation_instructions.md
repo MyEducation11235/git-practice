@@ -1,6 +1,6 @@
 ## Инструкция по установке Cramming Poems
 
-[<img src="photo/latest.jpg" width="300"/>](photo/latest.jpg)
+[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg)
 
 ### Нажимайте на то что обведено красным.
 
@@ -10,19 +10,19 @@
 	
 	Вы увидите:
 	
-	![latest](photo/latest.jpg){width=100}
+	[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg){width=100}
 
 1. Начните скачку установочного файла
 
-	![latest_start_load](photo/latest_start_load.jpg){width=200 height=100}
+	[<img src="photo/latest.jpg" width="250"/>](photo/latest_start_load.jpg)
 
 1. Дождаться скачивания
 
-	![latest_loading](photo/latest_loading.jpg)
+	[<img src="photo/latest_loading.jpg" width="250"/>](photo/latest_loading.jpg)
 
 1. Нажимаем *“Установить”*
 
-	![click_install](photo/click_install.jpg)
+	[<img src="photo/click_install.jpg" width="250"/>](photo/click_install.jpg)
 
 1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
 
@@ -30,33 +30,33 @@
 
 	В конце должно выглядеть так
 		
-	![permission_to_install_from_unknown_sources](photo/permission_to_install_from_unknown_sources.jpg)
+	[<img src="photo/permission_to_install_from_unknown_sources.jpg" width="250"/>](photo/permission_to_install_from_unknown_sources.jpg)
 	
 	После изменения настроек - снова открываем установочный файл
 
 
 1. Начинается установить - *ничего* не нажимаем
 
-	![start_of_installation](photo/start_of_installation.jpg)
+	[<img src="photo/start_of_installation.jpg" width="250"/>](photo/start_of_installation.jpg)
 
 1. Google Play Защита пытается нас остановить – нажимаем *подробнее*
 
-	![GooglePlay_defence_more_detailed](photo/GooglePlay_defence_more_detailed.jpg)
+	[<img src="photo/GooglePlay_defence_more_detailed.jpg" width="250"/>](photo/GooglePlay_defence_more_detailed.jpg)
 
 1. Для продолжения установки нажимам *“Всё равно установить”*
 
-	![GooglePlay_defence_install_it_anyway](photo/GooglePlay_defence_install_it_anyway.jpg)
+	[<img src="photo/GooglePlay_defence_install_it_anyway.jpg" width="250"/>](photo/GooglePlay_defence_install_it_anyway.jpg)
 
 1. Если появляется такое окно (появляется не всегда) нажимаем *“Не проверять”*
 
-	![GooglePlay_defence_do_not_check](photo/GooglePlay_defence_do_not_check.jpg)
+	[<img src="photo/GooglePlay_defence_do_not_check.jpg" width="250"/>](photo/GooglePlay_defence_do_not_check.jpg)
 
 1. Приложение провериться, и после этого установка должна быть завершена, вы можете *открыть* приложение
 
-	![open](photo/open.jpg)
+	[<img src="photo/open.jpg" width="250"/>](photo/open.jpg)
 
 1. На рабочем столе появится *иконка* приложения 
 
-	![icon](photo/icon.jpg)
+	[<img src="photo/icon.jpg" width="250"/>](photo/icon.jpg)
 	
 
