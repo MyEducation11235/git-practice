@@ -2,51 +2,58 @@
 
 ### Нажимайте на то что обведено красным.
 
-1. Скачать установочный файл
+1. Переходим по ссылке на последнюю версию приложения
 
-	![Dockerfile](photo/Dockerfile.png)
+	https://github.com/2romanio005/cramming_poems/releases/latest
+	
+	Вы увидите:
+	
+	![latest](photo/latest.jpg)
 
-1. Открыть установочный файл
+1. Начать скачку установочного файла
 
-1. Если высветится требование разрешить установку из неизвестных источников проходим по ссылке на инструкцию
+	![latest_start_load](photo/latest_start_load.jpg)
+
+1. Дождаться скачивания
+
+	![latest_loading](photo/latest_loading.jpg)
+
+1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
 
 	https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/
 
 	В конце должно выглядеть так
 		
-	![permission_to_install_from_unknown_sources](photo/permission_to_install_from_unknown_sources.png)
-				
-	![cont2_to_cont1](photo/cont2_to_cont1.png)
+	![permission_to_install_from_unknown_sources](photo/permission_to_install_from_unknown_sources.jpg)
 	
-	И снова открываем установочный файл
-
+	После изменения настроек - снова открываем установочный файл
 
 1. Нажимаем *“Установить”*
 
-	![click_install](photo/click_install.png)
+	![click_install](photo/click_install.jpg)
 
 1. Начинается установить - *ничего* не нажимаем
 
-	![start_of_installation](photo/start_of_installation.png)
+	![start_of_installation](photo/start_of_installation.jpg)
 
 1. Google Play Защита пытается нас остановить – нажимаем *подробнее*
 
-	![GooglePlay_defence_more_detailed](photo/GooglePlay_defence_more_detailed.png)
+	![GooglePlay_defence_more_detailed](photo/GooglePlay_defence_more_detailed.jpg)
 
 1. Для продолжения установки нажимам *“Всё равно установить”*
 
-	![GooglePlay_defence_install_it_anyway](photo/GooglePlay_defence_install_it_anyway.png)
+	![GooglePlay_defence_install_it_anyway](photo/GooglePlay_defence_install_it_anyway.jpg)
 
 1. Если появляется такое окно (появляется не всегда) нажимаем *“Не проверять”*
 
-	![GooglePlay_defence_do_not_check](photo/GooglePlay_defence_do_not_check.png)
+	![GooglePlay_defence_do_not_check](photo/GooglePlay_defence_do_not_check.jpg)
 
 1. Приложение провериться, и после этого установка должна быть завершена, вы можете *открыть* приложение
 
-	![open](photo/open.png)
+	![open](photo/open.jpg)
 
 1. На рабочем столе появится *иконка* приложения 
 
-	![icon](photo/icon.png)
+	![icon](photo/icon.jpg)
 	
 
