@@ -27,7 +27,7 @@
 
 1. Начинается установить - *ничего* не нажимаем
 
-	![start_of_installation](photo/start_of_installation.png
+	![start_of_installation](photo/start_of_installation.png)
 
 1. Google Play Защита пытается нас остановить – нажимаем *подробнее*
 
@@ -35,18 +35,18 @@
 
 1. Для продолжения установки нажимам *“Всё равно установить”*
 
-	![GooglePlay_defence_install_it_anyway](photo/GooglePlay_defence_install_it_anyway.png
+	![GooglePlay_defence_install_it_anyway](photo/GooglePlay_defence_install_it_anyway.png)
 
 1. Если появляется такое окно (появляется не всегда) нажимаем *“Не проверять”*
 
-	![GooglePlay_defence_do_not_check](photo/GooglePlay_defence_do_not_check.png
+	![GooglePlay_defence_do_not_check](photo/GooglePlay_defence_do_not_check.png)
 
 1. Приложение провериться, и после этого установка должна быть завершена, вы можете *открыть* приложение
 
-	![open](photo/open.png
+	![open](photo/open.png)
 
 1. На рабочем столе появится *иконка* приложения 
 
-	![icon](photo/icon.png
+	![icon](photo/icon.png)
 	
 
