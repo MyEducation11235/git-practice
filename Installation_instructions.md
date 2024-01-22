@@ -1,7 +1,5 @@
 ## Инструкция по установке Cramming Poems
 
-[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg)
-
 ### Нажимайте на то что обведено красным.
 
 1. Переходим по ссылке на последнюю версию приложения
@@ -10,7 +8,7 @@
 	
 	Вы увидите:
 	
-	[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg){width=100}
+	[<img src="photo/latest.jpg" width="250"/>](photo/latest.jpg)
 
 1. Начните скачку установочного файла
 
@@ -24,22 +22,22 @@
 
 	[<img src="photo/click_install.jpg" width="250"/>](photo/click_install.jpg)
 
-1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
+	Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
 
-	https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/
+		https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/
 
-	В конце должно выглядеть так
+		В конце должно выглядеть так
+			
+		[<img src="photo/permission_to_install_from_unknown_sources.jpg" width="250"/>](photo/permission_to_install_from_unknown_sources.jpg)
 		
-	[<img src="photo/permission_to_install_from_unknown_sources.jpg" width="250"/>](photo/permission_to_install_from_unknown_sources.jpg)
-	
-	После изменения настроек - снова открываем установочный файл
+		После изменения настроек - снова открываем установочный файл
 
 
-1. Начинается установить - *ничего* не нажимаем
+1. Начинается установка - *ничего* не нажимаем
 
 	[<img src="photo/start_of_installation.jpg" width="250"/>](photo/start_of_installation.jpg)
 
-1. Google Play Защита пытается нас остановить – нажимаем *подробнее*
+1. Google Play Защита пытается нас остановить – нажимаем *“подробнее”*
 
 	[<img src="photo/GooglePlay_defence_more_detailed.jpg" width="250"/>](photo/GooglePlay_defence_more_detailed.jpg)
 
@@ -51,7 +49,7 @@
 
 	[<img src="photo/GooglePlay_defence_do_not_check.jpg" width="250"/>](photo/GooglePlay_defence_do_not_check.jpg)
 
-1. Приложение провериться, и после этого установка должна быть завершена, вы можете *открыть* приложение
+1. Приложение провериться, и после этого установка должна быть завершена, вы можете *“открыть”* приложение
 
 	[<img src="photo/open.jpg" width="250"/>](photo/open.jpg)
 
