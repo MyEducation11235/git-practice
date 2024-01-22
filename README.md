@@ -11,6 +11,6 @@ g { color: Green }
 - <g>DONE:</g> Breath deeply and improve karma
 
 
-<span style="color:red">Нажимайте на то что обведено красным.</span>.
-<span style="color:#cc000e">Нажимайте на то что обведено красным.</span>.
+<span style="color:red">РќР°Р¶РёРјР°Р№С‚Рµ РЅР° С‚Рѕ С‡С‚Рѕ РѕР±РІРµРґРµРЅРѕ РєСЂР°СЃРЅС‹Рј.</span>.
+<span style="color:#cc000e">РќР°Р¶РёРјР°Р№С‚Рµ РЅР° С‚Рѕ С‡С‚Рѕ РѕР±РІРµРґРµРЅРѕ РєСЂР°СЃРЅС‹Рј.</span>.
 
