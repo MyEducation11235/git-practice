@@ -8,15 +8,19 @@
 	
 	Вы увидите:
 	
-	![latest](photo/latest.jpg)
+	![latest](photo/latest.jpg){width=100}
 
-1. Начать скачку установочного файла
+1. Начните скачку установочного файла
 
-	![latest_start_load](photo/latest_start_load.jpg)
+	![latest_start_load](photo/latest_start_load.jpg){width=200 height=100}
 
 1. Дождаться скачивания
 
 	![latest_loading](photo/latest_loading.jpg)
+
+1. Нажимаем *“Установить”*
+
+	![click_install](photo/click_install.jpg)
 
 1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию по ссылке, но вроде там всё очевидно.
 
@@ -28,9 +32,6 @@
 	
 	После изменения настроек - снова открываем установочный файл
 
-1. Нажимаем *“Установить”*
-
-	![click_install](photo/click_install.jpg)
 
 1. Начинается установить - *ничего* не нажимаем
 
