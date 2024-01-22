@@ -1,10 +1,10 @@
 ## Инструкция по установке Cramming Poems
 
-### Нажимайте на то что обведено красным.
+### Нажимайте на то, что обведено красным.
 
-1. Переходим по ссылке на последнюю версию приложения
+1. Переходим по ссылке на [последнюю версию приложения](https://github.com/2romanio005/cramming_poems/releases/latest)
 
-	https://github.com/2romanio005/cramming_poems/releases/latest
+	<https://github.com/2romanio005/cramming_poems/releases/latest>
 	
 	Вы увидите:
 	
@@ -18,7 +18,7 @@
 
 	[<img src="photo/latest_loading.jpg" width="250"/>](photo/latest_loading.jpg)
 
-1. Открыть Установочный файл
+1. Открыть **установочный файл**
 
 	[<img src="photo/run_the_installer.jpg" width="250"/>](photo/run_the_installer.jpg)
 
@@ -26,15 +26,15 @@
 
 	[<img src="photo/click_install.jpg" width="250"/>](photo/click_install.jpg)
 
-	1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. Инструкцию есть по ссылке, но вроде там всё очевидно.
+	1. Если высветится требование "разрешить установку из неизвестных источников" - разрешаем. [Инструкция](https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/) есть по ссылке, но вроде тут всё очевидно
 
-		https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/
+		<https://mi-check.ru/ustanovka-iz-neizvestnyx-istochnikov-v-miui-12/>
 
 	1. В конце должно выглядеть так
 			
 		[<img src="photo/permission_to_install_from_unknown_sources.jpg" width="250"/>](photo/permission_to_install_from_unknown_sources.jpg)
 		
-	1. После изменения настроек - снова открываем установочный файл
+	1. После изменения настроек - снова открываем **установочный файл**
 
 
 1. Начинается установка - **ничего** не нажимаем
