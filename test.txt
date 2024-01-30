@@ -1,8 +1,2 @@
-ffffffffffffffffffffffffffffffff
-
-123 456 lol
-
-
-много изменений в коде!!!
-
-hotfix there!!!
+какой то текст\n
+какой то текст\nвторая строка
