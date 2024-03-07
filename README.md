@@ -1,10 +1,10 @@
 # Игра "Бомбер" для двух человек для windows.
 
-	[<img src="Info/I_Icon.ico" width="160"/>](Info/I_Icon.ico)
+[<img src="Info/I_Icon.ico" width="160"/>](Info/I_Icon.ico)
 
 ### Геймплей
 
-	[<img src="Info/in_game.jpg" width="600"/>](Info/in_game.jpg)
+[<img src="Info/in_game.jpg" width="600"/>](Info/in_game.jpg)
 	
 Управление:
 	После нажатий на клавиши движений, движеий записываются в буффер и ваш персонаж постепенно движется по ним.
