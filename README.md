@@ -12,7 +12,7 @@
 
 1. Главное меню
 
-	[<img src="Info/settings.jpg" width="275"/>](Info/settings.jpg)
+	[<img src="Info/settings.jpg" width="300"/>](Info/settings.jpg)
 
 1. В игре
 
