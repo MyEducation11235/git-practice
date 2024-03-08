@@ -16,7 +16,7 @@
 
 1. В игре
 
-	[<img src="Info/in_game.jpg" width="400"/>](Info/in_game.jpg)
+	[<img src="Info/in_game.jpg" width="800"/>](Info/in_game.jpg)
 
 ### Управление
 
