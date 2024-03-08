@@ -16,19 +16,19 @@
 
 1. Выбор файла с исходыми данными и некоторых настроек
 
-	[<img src="Info/opening.jpg" width="250"/>](Info/opening.jpg)
+	[<img src="Info/opening.jpg" width="350"/>](Info/opening.jpg)
 
 1. Список всех слов и их прогресс заучивания
 
-	[<img src="Info/list.jpg" width="300"/>](Info/list.jpg)
+	[<img src="Info/list.jpg" width="400"/>](Info/list.jpg)
 
 1. Программа задаёт вопрос
 
-	[<img src="Info/asks.jpg" width="500"/>](Info/asks.jpg)
+	[<img src="Info/asks.jpg" width="600"/>](Info/asks.jpg)
 
 1. Дан неправильный ответ. Выводится правильный ответ, ваш ответ, и правило, аналогий или подсказка, если вы их указывали
 
-	[<img src="Info/answer.jpg" width="500"/>](Info/answer.jpg)
+	[<img src="Info/answer.jpg" width="600"/>](Info/answer.jpg)
 
 ### Формат входных данных
 
