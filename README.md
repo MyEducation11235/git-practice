@@ -24,7 +24,7 @@ Arduino NANO управляет всем. В корпусе расположен
 1. и ещё по мелочи (транзистор, сопротивления)
 
 [<img src="Info/case_is_outside.jpg" width="300"/>](Info/case_is_outside.jpg)
-[<img src="Info/case_is_from_the_inside.jpg" width="300"/>](Info/case_is_from_the_inside.jpg)
+[<img src="Info/case_is_from_the_inside.jpg" width="450"/>](Info/case_is_from_the_inside.jpg)
 
 ### Кран
 
