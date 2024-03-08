@@ -12,11 +12,11 @@
 
 1. Главное меню
 
-	[<img src="Info/settings.jpg" width="300"/>](Info/settings.jpg)
+	[<img src="Info/settings.jpg" width="250"/>](Info/settings.jpg)
 
 1. В игре
 
-	[<img src="Info/in_game.jpg" width="600"/>](Info/in_game.jpg)
+	[<img src="Info/in_game.jpg" width="700"/>](Info/in_game.jpg)
 
 ### Управление
 
