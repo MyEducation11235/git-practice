@@ -23,13 +23,12 @@ Arduino NANO управляет всем. В корпусе расположен
 1. Пищалка для оповещения о протечке
 1. и ещё по мелочи (транзистор, сопротивления)
 
-[<img src="Info/case_is_outside.jpg" width="600"/>](Info/case_is_outside.jpg)
-
+[<img src="Info/case_is_outside.jpg" width="300"/>](Info/case_is_outside.jpg)
 [<img src="Info/case_is_from_the_inside.jpg" width="300"/>](Info/case_is_from_the_inside.jpg)
 
 ### Кран
 
-[<img src="Info/valve.jpg" width="400"/>](Info/valve.jpg)
+[<img src="Info/valve.jpg" width="250"/>](Info/valve.jpg)
 
 ## Дата 
 
