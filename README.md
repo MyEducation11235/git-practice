@@ -13,44 +13,29 @@
       1. <https://github.com/2romanio005/Life_simulation>
       1. <https://github.com/2romanio005/Brizer>
       1. <https://github.com/2romanio005/FloodEliminator>
-   + Библиотека $\mathbb{\color[RGB]{252,193,83}{STL}}$
-: во всех проектах.
-   + Библиотека $\mathbb{\color[RGB]{252,193,83}{Win \ API}}$
-: проекты a, b, c.
-- $\mathbb{\color[RGB]{252,193,83}{Алгоритмы}}$
- и $\mathbb{\color[RGB]{252,193,83}{структуры}}$
- данных: 
+   + Библиотека $\mathbb{\color[RGB]{252,193,83}{STL}}$: во всех проектах.
+   + Библиотека $\mathbb{\color[RGB]{252,193,83}{Win \ API}}$: проекты a, b, c.
+- $\mathbb{\color[RGB]{252,193,83}{Алгоритмы}}$ и $\mathbb{\color[RGB]{252,193,83}{структуры}}$ данных: 
    + 1 год курса АиСД в ИТМО.
-   + $\mathbb{\color[RGB]{252,193,83}{Более \ 150}}$
- решённых задач на олимпиадное программирование.
-- $\mathbb{\color[RGB]{252,193,83}{ООП}}$
-:
-   + Умело выстраиваю $\mathbb{\color[RGB]{252,193,83}{архитектуру}}$
- проекта  
+   + $\mathbb{\color[RGB]{252,193,83}{Более \ 150}}$ решённых задач на олимпиадное программирование.
+- $\mathbb{\color[RGB]{252,193,83}{ООП}}$:
+   + Умело выстраиваю $\mathbb{\color[RGB]{252,193,83}{архитектуру}}$ проекта  
    пример: <https://github.com/2romanio005/File_comparison/tree/main/File_comparison>
-- Программирование $\mathbb{\color[RGB]{252,193,83}{микроконтроллеров}}$
- + основы $\mathbb{\color[RGB]{252,193,83}{схемотехники}}$
- :
-   + Arduino ($\mathbb{\color[RGB]{252,193,83}{ATmega328p}}$
-): проекты d, e.
-   + $\mathbb{\color[RGB]{252,193,83}{ESP8266}}$
- (Tensilica’s L106)[](https://github.com/2romanio005/Brizer): проект d.
+- Программирование $\mathbb{\color[RGB]{252,193,83}{микроконтроллеров}}$ и основы $\mathbb{\color[RGB]{252,193,83}{схемотехники}}$:
+   + Arduino ($\mathbb{\color[RGB]{252,193,83}{ATmega328p}}$): проекты d, e.
+   + $\mathbb{\color[RGB]{252,193,83}{ESP8266}}$ (Tensilica’s L106)[](https://github.com/2romanio005/Brizer): проект d.
    + Контроллер EV3 mindstorms.
-- $\mathbb{\color[RGB]{252,193,83}{Git \ + \ GitHab}}$
-:
-   + Использовался для $\mathbb{\color[RGB]{252,193,83}{командной}}$
- разработки.
+- $\mathbb{\color[RGB]{252,193,83}{Git \ + \ GitHab}}$:
+   + Использовался для $\mathbb{\color[RGB]{252,193,83}{командной}}$ разработки.
    + Мои репозитории: <https://github.com/2romanio005?tab=repositories>
 - Другие ЯП и фреймворки: Python, Dart + Flutter, Java + Processing, JavaScript + HTML, Bush.
 ## $\mathbb{\color[RGB]{255,127,0}{SOFT \ skills}}$
-- Терпеливый и очень $\mathbb{\color[RGB]{252,193,83}{неконфликтный}}$
- человек.
+- Терпеливый и очень $\mathbb{\color[RGB]{252,193,83}{неконфликтный}}$ человек.
 - Умею самостоятельно находить решения и нужную информацию.
 - Постоянно самообучаюсь.
 - Умею работать в команде ($\mathbb{\color[RGB]{252,193,83}{КИК}}$):
    + Курс КИК в ИТМО: <https://softskills.itmo.ru/m/course/index.php?categoryid=2>
-   + 3 $\mathbb{\color[RGB]{252,193,83}{командных}}$
- проекта:
+   + 3 $\mathbb{\color[RGB]{252,193,83}{командных}}$ проекта:
       1. <https://github.com/2romanio005/RemoteWeb>
       1. <https://github.com/2romanio005/cramming_poems>
       1. <https://github.com/NickAlexeev4488/budilnik>
