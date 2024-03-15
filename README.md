@@ -12,16 +12,16 @@
       1. <https://github.com/2romanio005/Brizer>
       1. <https://github.com/2romanio005/FloodEliminator>
    1. Библиотека **STL**: во всех проектах.
-   1. Библиотека **Win API**: проекты 1, 2, 3.
+   1. Библиотека **Win API**: проекты a, b, c.
 1. **Алгоритмы** и **структуры** данных: 
    1. 1 год курса АиСД в ИТМО.
    1. **Более 150** решённых задач на олимпиадное программирование.
 1. **ООП**:
    1. Умело выстраиваю **архитектуру** проекта  
-&emsp;&emsp;&emsp;&emsp;пример: <https://github.com/2romanio005/File_comparison/tree/main/File_comparison>
+&emsp;&emsp;&emsp;пример: <https://github.com/2romanio005/File_comparison/tree/main/File_comparison>
 1. Программирование **микроконтроллеров** + основы **схемотехники:**
-   1. Arduino (**ATmega328p**): проекты 4, 5.
-   1. **ESP8266** (Tensilica’s L106)[](https://github.com/2romanio005/Brizer): проект 4.
+   1. Arduino (**ATmega328p**): проекты d, e.
+   1. **ESP8266** (Tensilica’s L106)[](https://github.com/2romanio005/Brizer): проект d.
    1. Контроллер EV3 mindstorms.
 1. **Git + GitHab**:
    1. Использовался для **командной** разработки.
