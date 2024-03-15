@@ -10,8 +10,7 @@
 $\mathbb{\color[RGB]{252, 193, 83}{С++ \ более \ 4 \ лет}}$
 :
    + 5 больших 
-$\mathbb{\color[RGB]{252, 193, 83}{pet-проектов}}$
-
+$\mathbb{\color[RGB]{252, 193, 83}{pet-проектов}}$
  на С++:
       1. <https://github.com/2romanio005/File_comparison>
       1. <https://github.com/2romanio005/Bombers>
