@@ -15,7 +15,7 @@
       1. <https://github.com/2romanio005/Life_simulation>
       1. <https://github.com/2romanio005/Brizer>
       1. <https://github.com/2romanio005/FloodEliminator>
-   + Библиотека $\mathbb{\color[RGB]{252, 193, 83}{STL}}$
+   + Библиотека $\mathbb{\color[RGB]{252, 193, 83}{STL}}$
 : во всех проектах.
    + Библиотека $\mathbb{\color[RGB]{252, 193, 83}{Win \ API}}$
 : проекты a, b, c.
