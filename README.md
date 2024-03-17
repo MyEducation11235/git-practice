@@ -41,7 +41,7 @@ Arduino NANO управляет всем. В корпусе расположен
 
 ## $\mathbb{\color[RGB]{255,90,0}{Дата}}$
 
-&emsp;&emsp; $\mathbb{\color[RGB]{252,193,83}{Ноябрь 2023г.}}$
+&emsp;&emsp; $\mathbb{\color[RGB]{252,193,83}{Ноябрь \ 2023г.}}$
 
 ## $\mathbb{\color[RGB]{255,90,0}{Заключение}}$
 
