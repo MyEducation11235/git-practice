@@ -1,4 +1,4 @@
-﻿# $\mathbb{\color[RGB]{255,60,0}{Игра \ "Симуляция жизни" \ (Графическое, \ Windows)}}$
+﻿# $\mathbb{\color[RGB]{255,60,0}{Игра \ «Симуляция жизни» \ (Графическое, \ Windows)}}$
 
 [<img src="Info/Ico_Life_simulation.ico" width="160"/>](Info/Ico_Life_simulation.ico)
 
