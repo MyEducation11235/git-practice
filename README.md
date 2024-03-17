@@ -7,8 +7,8 @@
 ### $\mathbb{\color[RGB]{255,127,0}{Стек \ технологий \ разработки}}$
 
 - $\mathbb{\color[RGB]{252,193,83}{Processing \ (Java)}}$
-	+ $\mathbb{\color[RGB]{252,193,83}{3D \ графика}}$
-	+ Немного $\mathbb{\color[RGB]{252,193,83}{ООП}}$
+	+ $\mathbb{\color[RGB]{252,193,83}{3D \ графика}}$.
+	+ Немного $\mathbb{\color[RGB]{252,193,83}{ООП}}$.
 
 ### $\mathbb{\color[RGB]{255,127,0}{Среды \ разработки}}$
 
