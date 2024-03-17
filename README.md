@@ -6,11 +6,11 @@
 
 ### $\mathbb{\color[RGB]{255,127,0}{Стек \ технологий \ разработки}}$
 
-- C++ --- прога для микроконтроллера Arduino NANO
+- $\mathbb{\color[RGB]{252,193,83}{C++}}$ --- прога для микроконтроллера Arduino NANO
 	+ Красивое $\mathbb{\color[RGB]{252,193,83}{ООП}}$.
 	+ $\mathbb{\color[RGB]{252,193,83}{WatchDog}}$.
 - $\mathbb{\color[RGB]{252,193,83}{Схемотехника}}$
-	+ Создание датчика воды $\mathbb{\color[RGB]{252,193,83}{своими руками}}$.
+	+ Создание датчика воды $\mathbb{\color[RGB]{252,193,83}{своими \ руками}}$.
 	+ Проектирование [схемы](https://www.tinkercad.com/things/8X2s7huZZ8c-powerful-jarv-inari?sharecode=FLYuBVjGFrxY9XvGK_DYXVKlEWSpgqDJgoU0zU9iTNA) в $\mathbb{\color[RGB]{252,193,83}{TinkerCad}}$.
 
 ### $\mathbb{\color[RGB]{255,127,0}{Среда \ разработки}}$
@@ -41,9 +41,9 @@ Arduino NANO управляет всем. В корпусе расположен
 
 ## $\mathbb{\color[RGB]{255,90,0}{Дата}}$
 
-&emsp;&emsp;$\mathbb{\color[RGB]{252,193,83}{Ноябрь 2023г.}}$
+&emsp;&emsp; $\mathbb{\color[RGB]{252,193,83}{Ноябрь 2023г.}}$
 
 ## $\mathbb{\color[RGB]{255,90,0}{Заключение}}$
 
-&emsp;&emsp;Система отлично работает, и уже $\mathbb{\color[RGB]{252,193,83}{два раза}}$ из двух $\mathbb{\color[RGB]{252,193,83}{успешно оповестила}}$ нас о протечке и отключила воду. 
+&emsp;&emsp;Система отлично работает, и уже $\mathbb{\color[RGB]{252,193,83}{два \ раза}}$ из двух $\mathbb{\color[RGB]{252,193,83}{успешно \ оповестила}}$ нас о протечке и отключила воду. 
  
