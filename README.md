@@ -1,34 +1,29 @@
-# $\mathbb{\color[RGB]{255,60,0}{Универсальные \ игральные \ кости \ (Графич, \ Androud)}}$
+# $\mathbb{\color[RGB]{255,60,0}{Массовый Шифратор файлов через XOR \ (Графич, \ Windows)}}$
 
-[<img src="Info/launcher_icon.jpg" width="160"/>](Info/launcher_icon.jpg)
+Просто pet-проект на Qt, попечённый Win Api. Шифрует файлы через XOR с вводимым 64 битным ключом. Для расшифровки надо получившиеся файлы ещё раз тем же ключём жахнуть.
 
 ## $\mathbb{\color[RGB]{255,90,0}{Основная \ информация}}$
 
 ### $\mathbb{\color[RGB]{255,127,0}{Стек \ технологий \ разработки}}$
 
-- Язык $\mathbb{\color[RGB]{252,193,83}{Dart}}$
-	+ Фреймворк $\mathbb{\color[RGB]{252,193,83}{Flutter}}$.
-- Тестирование
-	+ $\mathbb{\color[RGB]{252,193,83}{интеграционные}}$ через библиотеку integration_test.
-	+ $\mathbb{\color[RGB]{252,193,83}{модульные}}$ через библиотеку flutter_test.
+- Язык $\mathbb{\color[RGB]{252,193,83}{C++}}$
+	+ библиотека $\mathbb{\color[RGB]{252,193,83}{Qt}}$.
+	+ библиотека $\mathbb{\color[RGB]{252,193,83}{Win \ Api}}$. Для работы с файлами в эксклюзивном режиме.
 
 ### $\mathbb{\color[RGB]{255,127,0}{Среда \ разработки}}$
 
-- Android Studio
+- Qt Creator 13.0.0
 
 ### $\mathbb{\color[RGB]{255,127,0}{Фото \ работы}}$
 
-|Создание любого собственного кубика|Выбор используемых кубиков|Бросок всех выбранных кубиков|
-|-|-|-|
-|[<img src="Info/dice_editing.jpg" width="250"/>](Info/dice_editing.jpg)|[<img src="Info/dice_choosing.jpg" width="250"/>](Info/dice_choosing.jpg)|[<img src="Info/dice_roll.jpg" width="250"/>](Info/dice_roll.jpg)|
+[<img src="Info/in_work.png" width="900"/>](Info/in_work.png)
 
 ## $\mathbb{\color[RGB]{255,90,0}{Дата}}$
 
-&emsp;&emsp; $\mathbb{\color[RGB]{252,193,83}{Май 2024}}$
+&emsp;&emsp; $\mathbb{\color[RGB]{252,193,83}{17-19 \ мая \ 2024}}$
 
 ## $\mathbb{\color[RGB]{255,90,0}{Заключение}}$
 
-&emsp;&emsp;Приложение полностью нормально функционирует, но немного страдает дизайн. Вы можете скачать его в [релизах](https://github.com/MyEducation11235/UniversalDice/releases/latest), что-бы всегда быть готовым к настольной игре.
+&emsp;&emsp;Оно работает но я не особо его тестировал. Вы можете скачать его в [релизах]https://github.com/2romanio005/FileModification/releases/latest), если вам вдруг нтересно.
 
-${\color{yellow}TODO}$ 1) Изменить размеры кнопки бросить на повыше.\
-${\color{yellow}TODO}$ 2) Боковые менюшки очень узкине на больших экранах.
+${\color{yellow}TODO}$ 1) Протестировать что происходит когда размер файла не кратен 64 битам, можно ли его расшифровать после этого.
