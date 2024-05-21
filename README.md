@@ -1,6 +1,6 @@
 # $\mathbb{\color[RGB]{255,60,0}{Универсальные \ игральные \ кости \ (Графич, \ Androud)}}$
 
-[<img src="Info/I_Icon.ico" width="160"/>](Info/launcher_icon.jpg)
+[<img src="Info/launcher_icon.jpg" width="160"/>](Info/launcher_icon.jpg)
 
 ## $\mathbb{\color[RGB]{255,90,0}{Основная \ информация}}$
 
@@ -18,8 +18,11 @@
 
 ### $\mathbb{\color[RGB]{255,127,0}{Фото \ работы}}$
 
+Создание любого собственного кубика
 [<img src="Info/dice_editing.jpg" width="250"/>](Info/dice_editing.jpg)
+Бросок всех выбранных кубиков 
 [<img src="Info/dice_roll.jpg" width="250"/>](Info/dice_roll.jpg)
+Выбор используемых кубиков
 [<img src="Info/dice_choosing.jpg" width="250"/>](Info/dice_choosing.jpg)
 
 ## $\mathbb{\color[RGB]{255,90,0}{Дата}}$
@@ -28,7 +31,7 @@
 
 ## $\mathbb{\color[RGB]{255,90,0}{Заключение}}$
 
-&emsp;&emsp;Приложение полностью нормально функционирует, но немного страдает дизайн. Вы можете скачать его в [релизах](releases/latest), что-бы всегда быть готовым к настольной игре.
+&emsp;&emsp;Приложение полностью нормально функционирует, но немного страдает дизайн. Вы можете скачать его в [релизах](https://github.com/MyEducation11235/UniversalDice/releases/latest), что-бы всегда быть готовым к настольной игре.
 
 ${\color{yellow}TODO}$ 1) Изменить размеры кнопки бросить на повыше.\
 ${\color{yellow}TODO}$ 2) Боковые менюшки очень узкине на больших экранах.
