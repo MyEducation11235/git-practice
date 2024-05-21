@@ -18,12 +18,9 @@
 
 ### $\mathbb{\color[RGB]{255,127,0}{Фото \ работы}}$
 
-Создание любого собственного кубика
-[<img src="Info/dice_editing.jpg" width="250"/>](Info/dice_editing.jpg)
-Бросок всех выбранных кубиков 
-[<img src="Info/dice_roll.jpg" width="250"/>](Info/dice_roll.jpg)
-Выбор используемых кубиков
-[<img src="Info/dice_choosing.jpg" width="250"/>](Info/dice_choosing.jpg)
+|Создание любого собственного кубика|Выбор используемых кубиков|Бросок всех выбранных кубиков|
+|-|-|-|
+|[<img src="Info/dice_editing.jpg" width="250"/>](Info/dice_editing.jpg)|[<img src="Info/dice_choosing.jpg" width="250"/>](Info/dice_choosing.jpg)|[<img src="Info/dice_roll.jpg" width="250"/>](Info/dice_roll.jpg)|
 
 ## $\mathbb{\color[RGB]{255,90,0}{Дата}}$
 
