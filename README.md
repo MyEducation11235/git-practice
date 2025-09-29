@@ -6,7 +6,7 @@
 
 Консоль приложения сервера
 
-[<img src="report_photo/Task1_server.png"]()
+[<img src="report_photo/Task1_server.png"/>]()
 
 Консоль приложения клиента
 
