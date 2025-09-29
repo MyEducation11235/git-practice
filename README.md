@@ -42,7 +42,13 @@
 
 Запустим сервер на localhost:8080
 
-[<img src="report_photo/Task3_web.gif" width="400"/>]()
+html будем брать из лежашего рядом файла "index.html". Дальше оборачиваем его в HTTP сообщение и отправляем всем новым клиентам.
+
+[<img src="report_photo/Task3_server_code.png" />]()
+
+Наш сайт!
+
+[<img src="report_photo/Task3_web.gif" width="600"/>]()
 
 ## Задание 4
 
