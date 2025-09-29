@@ -19,13 +19,16 @@
 В нашем варианте требуется проводить вычисления по теореме Пифагора.
 
 1. Вычислить гипотенузу по двум катетам
-[<img src="report_photo/Task2_client_1.png" />]()
+
+	[<img src="report_photo/Task2_client_1.png" />]()
 
 2. Вычислить катет по гипотенузе и другому катету
-[<img src="report_photo/Task2_client_2.png" />]()
+
+	[<img src="report_photo/Task2_client_2.png" />]()
 
 3. Можно разорвать соединение, и после этого приложение клиента завершается
-[<img src="report_photo/Task2_client_q.png" />]()
+
+	[<img src="report_photo/Task2_client_q.png" />]()
 
 Консоль сервера после предыдущих запросов
 
