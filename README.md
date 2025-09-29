@@ -6,13 +6,37 @@
 
 Консоль приложения сервера
 
-[<img src="report_photo/Task1_server.png"/>]()
+[<img src="report_photo/Task1_server.png" />]()
 
 Консоль приложения клиента
 
-[<img src="report_photo/Task1_client.png"]()
+[<img src="report_photo/Task1_client.png" />]()
+
+Ничего особенного, просто "Hello world!" в сетевом мире.
 
 ## Задание 2
+
+В нашем варианте требуется проводить вычисления по теореме Пифагора.
+
+1. Вычислить гипотенузу по двум катетам
+
+[<img src="report_photo/Task2_client_1.png" />]()
+
+2. Вычислить катет по гипотенузе и другому катету
+
+[<img src="report_photo/Task2_client_2.png" />]()
+
+3. Можно разорвать соединение
+
+[<img src="report_photo/Task2_client_q.png" />]()
+
+Консоль сервера после предыдущих запросов
+
+[<img src="report_photo/Task2_server.png" />]()
+
+Сервер поддерживает паралельную обработку запросов за счёт разпределения клиентов по потокам.
+
+[<img src="report_photo/Task2_server_code.png" />]()
 
 
 ## Задание 3
