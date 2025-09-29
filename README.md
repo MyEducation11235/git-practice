@@ -42,9 +42,7 @@
 
 Запустим сервер на localhost:8080
 
-![Сайт!](report_photo/Task3_web.gif)
-
-[<img src="report_photo/Task3_web.gif" />]()
+[<img src="report_photo/Task3_web.gif" "width=400"/>]()
 
 ## Задание 4
 
