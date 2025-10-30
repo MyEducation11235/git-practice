@@ -59,7 +59,7 @@
 <details>
   <summary>Click me</summary>
 
-  ```js
+  ```
   x1	x2	x3	x4
   2	1	3	2	min
   1	2	1	0	<=	11
