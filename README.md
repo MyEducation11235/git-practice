@@ -59,7 +59,6 @@
 <details>
   <summary>Click me</summary>
 
-  ### Some Javascript
   ```js
   function logSomething(something) {
     console.log('Something', something);
