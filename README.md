@@ -58,13 +58,12 @@
 
 <details open>
   <summary>Исходные данные (вариант 18)</summary>
-```
-x1	x2	x3	x4
-2	1	3	2	min
-1	2	1	0	<=	11
-1	0	1	1	=	8
-0	1	0	1	>=	3
-```
+  ### Some Javascript
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
 </details>
 
 <details open>
