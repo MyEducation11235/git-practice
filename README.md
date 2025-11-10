@@ -131,6 +131,23 @@ def participant_edit(request):
     return render(request, "racing/participant_edit.html", {"form": form})
 ```
 
+В некоторых представлениях сделана пагианция.
+
+```python
+def races_list(request):
+    qs = Race.objects.all().order_by('-date')
+    paginator = Paginator(qs, 2)
+    page = request.GET.get('page', 1)
+    races = paginator.get_page(page)
+    try:
+        registered_races = request.user.profile.participant.registrations.values_list('race_id', flat=True)
+    except Exception:
+        registered_races = []
+        
+    return render(request, 'racing/races_list.html', {'races': races, 'registered_races': registered_races})
+
+```
+
 ---
 
 ## 🧰 Панель администратора
@@ -144,8 +161,20 @@ def participant_edit(request):
 * Управлять заездами гонок
 * Заносить результаты гонок
 
-Для администартора добавляются кнопки на самом сайте и используется стандартная панель Django, доступная по:
+Для администартора добавляются кнопки на самом сайте и используется стандартная панель Django, доступная по `/admin/`
 
-```
-/admin/
-```
+[<img src="report_photo/admin.png" width="600" />]()
+
+## Внешний вид приложения
+
+Список автогонок
+
+[<img src="report_photo/list.png" width="600" />]()
+
+Стать участником
+
+[<img src="report_photo/create.png" width="600" />]()
+
+Таблица результатов заездов гонки. И с низу панель коментариев к гонке
+
+[<img src="report_photo/result.png" width="600" />]()
