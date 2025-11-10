@@ -163,18 +163,18 @@ def races_list(request):
 
 Для администартора добавляются кнопки на самом сайте и используется стандартная панель Django, доступная по `/admin/`
 
-[<img src="report_photo/admin.png" width="750" />]()
+[<img src="report_photo/admin.png" />]()
 
 ## Внешний вид приложения
 
 Список автогонок
 
-[<img src="report_photo/list.png" width="750" />]()
+[<img src="report_photo/list.png" />]()
 
 Стать участником
 
-[<img src="report_photo/create.png" width="750" />]()
+[<img src="report_photo/create.png" />]()
 
 Таблица результатов заездов гонки. И с низу панель коментариев к гонке
 
-[<img src="report_photo/result.png" width="750" />]()
+[<img src="report_photo/result.png" />]()
