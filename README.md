@@ -32,6 +32,13 @@ USER postgres
 </details>
 
 <details>
+  <summary>Конечный docker-compose.yml</summary>
+
+```
+```
+</details>
+
+<details>
   <summary>postgres0.yml</summary>
 
 ```
@@ -71,55 +78,110 @@ USER postgres
 
 [<img src="ReportPhoto/compose.png" />]()
 
-Узнаём какая из нод стала главной
-	docker compose logs pg-master | grep leader
-	docker compose logs pg-slave | grep leader
+Узнаём какая из нод стала главной:
 
-Основной является pg-slave
+`docker compose logs pg-master | grep leader`
+
+`docker compose logs pg-slave | grep leader`
+
+[<img src="ReportPhoto/whoLeader.png" />]()
+
+Основной является *pg-slave*
 
 Проверяем, что зукипер запустился
-	docker logs zoo | grep 2181
-	
-	
-# Часть 2
 
-Подключаемся к основной бд (pg-slave)
+`docker logs zoo | grep 2181`
 
+[<img src="ReportPhoto/zooStarted.png" />]()
+
+### Вопрос о разнице между expose и ports в Docker Compose
+expose делает порт доступным только для других контейнеров в той же сети Docker, но не публикует его на хост-машине. ports публикует порт на хост-машине, позволяя внешним подключениям. В данной лабораторной порт 8008 используется Patroni для внутреннего API, поэтому его достаточно экспонировать только между контейнерами. Порты 5433 и 5434 проброшены на хост для подключения клиентов к БД.
+
+### Вопрос о пересборке образа при изменениях в Docker Compose
+При обычном docker-compose up образ не пересобирается, если он уже существует. Если изменить файлы postgresX.yml, которые копируются в образ через COPY в Dockerfile, потребуется пересборка с docker-compose up --build. Если же изменить только содержимое Dockerfile, пересборка также потребуется. Однако если конфигурационные файлы монтируются через volumes, изменения применяются без пересборки.
+
+# Часть 2 Проверяем репликацию
+
+Подключаемся к основной бд (pg-slave) и редиактируем её
+
+```
 CREATE TABLE test_table (id int, data varchar);
 INSERT INTO test_table VALUES('2', 'data for replic');
 SELECT * FROM test_table
+```
 
-Проверяем на реплике (pg-master) - получили те же данные
+Изменения прошли успешно.
 
-SELECT * FROM test_table
+[<img src="ReportPhoto/editLeader.png" />]()
+
+Проверяем на реплике (pg-master).
+
+`SELECT * FROM test_table`
+
+Получили те же данные.
+
+[<img src="ReportPhoto/lookingReplic.png" />]()
 
 Пробуем изменить реплику (pg-master) напрямую
 
-INSERT INTO test_table VALUES('3', 'data error');
+`INSERT INTO test_table VALUES('3', 'data error')`
 
 Получаем ошибку:
-ERROR:  cannot execute INSERT in a read-only transaction 
+`ERROR:  cannot execute INSERT in a read-only transaction`
 
-# Часть 3
+[<img src="ReportPhoto/errorEdit.png" />]()
 
-haproxy.cfg
+# Часть 3 Делаем высокую доступность
+
+Перезапускаем проект после изменений в `docker-compose.yml`. Для этого:
 
 Удаляем ранее поднятые контейнеры
-	docker compose down
+
+`docker compose down`
 
 И запускаем заново
-	docker compose up -d
+`docker compose up -d`
 
-Через несколько секунд проверяем, что HAproxy работает
-	docker logs postgres_entrypoint
+и проверяем, что всё работает так же как до этого.
 
+[<img src="ReportPhoto/restart.png" />]()
 
-Принудительно отключаем мастер:
+Через несколько секунд проверяем, что HAproxy тоже начал работать
 
-	docker stop pg-slave
+`docker logs postgres_entrypoint`
 
+[<img src="ReportPhoto/haproxyLogs.png" />]()
 
-Запускаем старого мастера обратно
-	docker start pg-slave
+Проверяем что через порт HAProxy получаем те же данные, что записаны в бд.
 
+[<img src="ReportPhoto/haproxyConnected.png" />]()
 
+Принудительно отключаем ноду текущего мастера (pg-slave):
+
+`docker stop pg-slave`
+
+[<img src="ReportPhoto/stopMaster.png" />]()
+
+И видим, что реплика перехватила подхватила работу и стала лидирующей нодой.
+
+Пытаемся добавить новую таблицу sql. Она добавляется на единственную активную ноду.
+
+[<img src="ReportPhoto/replicUpdated.png" />]()
+
+Запускаем старого мастера (pg-slave) обратно
+
+`docker start pg-slave`
+
+[<img src="ReportPhoto/restartMaster.png" />]()
+
+Проверяем, что он получил изменения, сделанные в моменте пока он не работал.
+
+[<img src="ReportPhoto/oldmasterUpdated.png" />]()
+
+Теперь старый масте стал репликой. Роли поменялись местами.
+
+[<img src="ReportPhoto/oldmasterNowIsReplic.png" />]()
+
+## Вывод
+
+В ходе работы был успешно развернут отказоустойчивый кластер PostgreSQL. Использование Patroni в связке с ZooKeeper позволило автоматизировать процесс перевыборов лидера при отказе, а HAProxy обеспечил прозрачное для пользователя переключение между узлами. Кластер сохраняет работоспособность и целостность данных даже при выходе из строя одного из серверов БД. Однако приходится платить за это избыточностью данных.
