@@ -1,129 +1,125 @@
-Рассмотрим задачу условной минимизации:
+# Лабораторная работа 1. HA Postgres Cluster
 
-\[
-f(x,y)=3x^2+2xy+2y^2
-\]
+Выполнил: Проскуряков Роман Владимирович
 
-при ограничениях
-\[
-g_1(x,y)=x+2y-2=0,\qquad g_2(x,y)=2x-y-1=0.
-\]
+## Часть 1. Поднимаем Postgres
 
----
+<details>
+  <summary>Dockerfile</summary>
 
-## 1. Идентификация задачи
+```
+ FROM postgres:15
 
-Это задача **условной оптимизации с равенствами**. Число ограничений (2) равно размерности пространства (2), поэтому допустимое множество, вообще говоря, состоит из одной точки (если система ограничений совместна и имеет единственное решение).
+# Ставим нужные для Patroni зависимости
+RUN apt-get update -y && \
+	apt-get install -y netcat-openbsd python3-pip curl python3-psycopg2 python3-venv iputils-ping
 
-Тем не менее, задачу корректно решить методом множителей Лагранжа.
+# Используем виртуальное окружение, доустанавливаем, собственно, Patroni
+RUN python3 -m venv /opt/patroni-venv && \
+	/opt/patroni-venv/bin/pip install --upgrade pip && \
+	/opt/patroni-venv/bin/pip install patroni[zookeeper] psycopg2-binary
 
----
+# Копируем конфигурацию для двух узлов кластера Patroni
+COPY postgres0.yml /postgres0.yml
+COPY postgres1.yml /postgres1.yml
 
-## 2. Лагранжиан
+ENV PATH="/opt/patroni-venv/bin:$PATH"
 
-Введём множители Лагранжа \(\lambda_1,\lambda_2\) и запишем функцию Лагранжа:
-\[
-\mathcal L(x,y,\lambda_1,\lambda_2)
-=
-3x^2+2xy+2y^2
-+\lambda_1(x+2y-2)
-+\lambda_2(2x-y-1).
-\]
+USER postgres
 
----
+#CMD не задаем, т.к. все равно будем переопределять его далее в compose
+```
+</details>
 
-## 3. Необходимые условия первого порядка
+<details>
+  <summary>postgres0.yml</summary>
 
-Найдём частные производные и приравняем их к нулю:
+```
+```
+</details>
 
-\[
-\begin{cases}
-\frac{\partial \mathcal L}{\partial x}=6x+2y+\lambda_1+2\lambda_2=0,\\[4pt]
-\frac{\partial \mathcal L}{\partial y}=2x+4y+2\lambda_1-\lambda_2=0,\\[4pt]
-x+2y-2=0,\\
-2x-y-1=0.
-\end{cases}
-\]
+<details>
+  <summary>postgres1.yml</summary>
 
----
+```
+```
+</details>
 
-## 4. Решение системы ограничений
+<details>
+  <summary>haproxy.cfg</summary>
 
-Из ограничений:
-\[
-\begin{cases}
-x+2y=2,\\
-2x-y=1.
-\end{cases}
-\]
+```
+```
+</details>
 
-Решим систему:
-\[
-y=\frac{3}{5},\qquad x=\frac{4}{5}.
-\]
+Собираем докер образ из докер файла
+	
+`docker build --no-cache -f Dockerfile -t localhost/postgres:patroni .`
 
-Это единственная допустимая точка.
+[<img src="ReportPhoto/build.png" />]()
 
----
+Запустим контейнеры через docker compose
 
-## 5. Значение целевой функции
+`docker compose up -d`
 
-\[
-f\!\left(\frac45,\frac35\right)
-=
-3\left(\frac45\right)^2
-+2\cdot\frac45\cdot\frac35
-+2\left(\frac35\right)^2
-=
-\frac{96}{25}.
-\]
+Эта команда запустит:
+* pg-master (Postgres + Patroni, порт 5433)
+* pg-slave (Postgres + Patroni, порт 5434)
+* zoo (Zookeeper, порт 2181)
 
----
+`docker compose ps`
 
-## 6. Проверка характера точки (критерий Сильвестра)
+[<img src="ReportPhoto/compose.png" />]()
 
-Матрица Гессе функции \(f(x,y)\):
+Узнаём какая из нод стала главной
+	docker compose logs pg-master | grep leader
+	docker compose logs pg-slave | grep leader
 
-\[
-H=
-\begin{pmatrix}
-\frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x\partial y}\\
-\frac{\partial^2 f}{\partial y\partial x} & \frac{\partial^2 f}{\partial y^2}
-\end{pmatrix}
-=
-\begin{pmatrix}
-6 & 2\\
-2 & 4
-\end{pmatrix}.
-\]
+Основной является pg-slave
 
-Проверим критерий Сильвестра:
+Проверяем, что зукипер запустился
+	docker logs zoo | grep 2181
+	
+	
+# Часть 2
 
-* первый главный минор:
-\[
-\Delta_1=6>0,
-\]
-* второй главный минор:
-\[
-\Delta_2=\det H = 6\cdot4-2\cdot2=20>0.
-\]
+Подключаемся к основной бд (pg-slave)
 
-Следовательно, матрица Гессе положительно определена, а функция \(f(x,y)\) строго выпукла.
+CREATE TABLE test_table (id int, data varchar);
+INSERT INTO test_table VALUES('2', 'data for replic');
+SELECT * FROM test_table
 
-Так как допустимое множество состоит из одной точки, и функция строго выпукла, найденная точка является **строгим условным минимумом**.
+Проверяем на реплике (pg-master) - получили те же данные
 
----
+SELECT * FROM test_table
 
-## 7. Итог
+Пробуем изменить реплику (pg-master) напрямую
 
-**Условный минимум достигается в точке**
-\[
-\boxed{\left(x^*,y^*\right)=\left(\frac45,\frac35\right)}
-\]
+INSERT INTO test_table VALUES('3', 'data error');
 
-**Минимальное значение функции**
-\[
-\boxed{f_{\min}=\frac{96}{25}}.
-\]
+Получаем ошибку:
+ERROR:  cannot execute INSERT in a read-only transaction 
 
-Точка является строгим условным минимумом, что подтверждается критерием Сильвестра.
+# Часть 3
+
+haproxy.cfg
+
+Удаляем ранее поднятые контейнеры
+	docker compose down
+
+И запускаем заново
+	docker compose up -d
+
+Через несколько секунд проверяем, что HAproxy работает
+	docker logs postgres_entrypoint
+
+
+Принудительно отключаем мастер:
+
+	docker stop pg-slave
+
+
+Запускаем старого мастера обратно
+	docker start pg-slave
+
+
