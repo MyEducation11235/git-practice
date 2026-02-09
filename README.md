@@ -98,7 +98,7 @@
 
 Команда устанавливает слишком новую версию Zabbix
 
-`~~docker exec -it grafana bash -c "grafana cli plugins install alexanderzobnin-zabbix-app"~~`
+~`docker exec -it grafana bash -c "grafana cli plugins install alexanderzobnin-zabbix-app"`~
 
 #### Вместо этого установим версию совместимую с grafana:11.2.0
 
