@@ -1,4 +1,4 @@
-# Лабораторная работа 2. 
+# Лабораторная работа 2. Loki + Zabbix + Grafana
 
 Выполнил: Проскуряков Роман Владимирович
 
@@ -22,7 +22,7 @@
 
 `docker compose up -d`
 
-dockerStart.png
+![](ReportPhoto/dockerStart.png)
 
 Создаём аккаун в Nextcloud (http://127.0.0.1:8080)
 
@@ -34,13 +34,13 @@ dockerStart.png
 
 `cat data/nextcloud.log`
 
-nextCloudLog.png
+![](ReportPhoto/nextCloudLog.png)
 
 Проверяем в логах promtail, что он “подцепил” нужный нам log-файл: должны быть строчки, содержащие `msg="Seeked /opt/nc_data/nextcloud.log ..."`
 
 `docker compose logs promtail`
 
-promtailInitLogs.png
+![](ReportPhoto/promtailInitLogs.png)
 
 ## Часть 2. Мониторинг
 
@@ -55,7 +55,7 @@ promtailInitLogs.png
 
 Делаем import кастомного шаблона (template.yml) в zabbix для мониторинга nextcloud.
 
-templateImport.png
+![](ReportPhoto/templateImport.png)
 
 Чтобы Zabbix и Nextcloud могли общаться по своим коротким именам внутри докеровской сети, в некстклауде необходимо “разрешить” это имя. Для этого
 нужно зайти на контейнер некстклауда под юзером www-data
@@ -68,29 +68,29 @@ templateImport.png
 
 Создаём хоста в Zabbix. Чтобы он знал, что ему слушать.
 
-CreateHost.png
+![](ReportPhoto/CreateHost.png)
 
 Получаем первые данные с хоста *healhy*
 
-monitoring1.png
+![](ReportPhoto/monitoring1.png)
 
 Попробуем нарушить работу тестового сервиса.
 
 `docker exec -u www-data -it nextcloud bash`
 
-ProblemConsole.png
+![](ReportPhoto/ProblemConsole.png)
 
 Создаём проблему:
 
 `php occ maintenance:mode --on`
 
-Problem.png
+![](ReportPhoto/Problem.png)
 
 Возвращаем как было.
 
 `php occ maintenance:mode --off`
 
-ProblemResolved.png
+![](ReportPhoto/ProblemResolved.png)
 
 ## Часть 3. Визуализация
 
@@ -114,61 +114,61 @@ ProblemResolved.png
 
 `wget https://github.com/grafana/grafana-zabbix/releases/download/v5.2.1/alexanderzobnin-zabbix-app-5.2.1.zip`
 
-installZabbixDowngrade.png
+![](ReportPhoto/installZabbixDowngrade.png)
 
 Разархивируем архив
 
 `unzip alexanderzobnin-zabbix-app-5.2.1.zip`
 
-unzip.png
+![](ReportPhoto/unzip.png)
 
 После установки плагина любым из способов нужно выполнить рестарт
 
 `docker restart grafana`
 
-grafaneResart.png
+![](ReportPhoto/grafaneResart.png)
 
 #### Заходим в grafana (http://localhost:3000)
 
 Проверяем что установлена нужная версия
 
-showWersion.png
+![](ReportPhoto/showWersion.png)
 
 Активируем плагин Zabbix (Enable)
 
-ActiviteZabbix.png
+![](ReportPhoto/ActiviteZabbix.png)
 
 #### Подключаем Zabbix к Grafana (http://zabbix-front:8080/api_jsonrpc.php)
 
-addZabbix.png
+![](ReportPhoto/addZabbix.png)
 
 Успешно
 
-zabbixSuccess.png
+![](ReportPhoto/zabbixSuccess.png)
 
 #### Подключаем Loki к Grafana (http://loki:3100)
 
-AddLoki.png
+![](ReportPhoto/AddLoki.png)
 
 Успешно
 
-lokiSuccess.png
+![](ReportPhoto/lokiSuccess.png)
 
 В Explore получаем логи Zabbix
 
-zabbixLogs.png
+![](ReportPhoto/zabbixLogs.png)
 
 В Explore получаем логи loki
 
-lokiLogs.png
+![](ReportPhoto/lokiLogs.png)
 
 дашборд датасурсов Zabbix - график доступности по времени
 
-zabbixDasboard.png
+![](ReportPhoto/zabbixDasboard.png)
 
 дашборд датасурсов Loki - таблица с логами
 
-lokiDashboard.png
+![](ReportPhoto/lokiDashboard.png)
 
 ## Ответы на вопросы
 
