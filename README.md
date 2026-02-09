@@ -24,7 +24,7 @@
 
 ![](ReportPhoto/dockerStart.png)
 
-Создаём аккаун в Nextcloud (http://127.0.0.1:8080)
+Создаём аккаунт в Nextcloud (http://127.0.0.1:8080)
 
 ![](ReportPhoto/NextcloudStart.png)
 
@@ -98,7 +98,7 @@
 
 Команда устанавливает слишком новую версию Zabbix
 
-~~`docker exec -it grafana bash -c "grafana cli plugins install alexanderzobnin-zabbix-app"`~~
+`~~docker exec -it grafana bash -c "grafana cli plugins install alexanderzobnin-zabbix-app"~~`
 
 #### Вместо этого установим версию совместимую с grafana:11.2.0
 
@@ -122,7 +122,7 @@
 
 ![](ReportPhoto/unzip.png)
 
-После установки плагина любым из способов нужно выполнить рестарт
+После установки плагина любым из способов, нужно выполнить рестарт
 
 `docker restart grafana`
 
@@ -130,7 +130,7 @@
 
 #### Заходим в grafana (http://localhost:3000)
 
-Проверяем что установлена нужная версия
+Проверяем, что установлена нужная версия
 
 ![](ReportPhoto/showWersion.png)
 
